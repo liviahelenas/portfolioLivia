@@ -172,6 +172,7 @@ nav li:hover {
 .hero {
     background-image: var(--bg-another);
     background-repeat: repeat;
+    background-attachment: fixed;
     background-size: cover;
     width: auto;
     height: 100vh;
@@ -180,6 +181,7 @@ nav li:hover {
     margin-top: -60px;
     /* altura do header */
     padding-top: 60px;
+    background-color: var(--primary-color);
 }
 
 .contentHero {
@@ -1586,9 +1588,6 @@ button {
         flex-direction: column;
     }
 
-    .hero {
-        margin-top: 2rem;
-    }
 
     .quebraGelo {
         flex-direction: column;
