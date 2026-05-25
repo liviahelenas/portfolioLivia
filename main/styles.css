@@ -1519,13 +1519,13 @@ button {
     height: 100%;
 
     width: 100%;
+    padding: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2%;
 
 
 }
@@ -1536,7 +1536,7 @@ button {
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    padding: 2%;
+    padding: 4%;
 }
 
 .cardFront {
@@ -1587,8 +1587,9 @@ button {
     }
 
     .hero {
-         margin-top: 2rem;
+        margin-top: 2rem;
     }
+
     .quebraGelo {
         flex-direction: column;
         padding: 2%;
@@ -1620,7 +1621,7 @@ button {
     .cta {
         flex-direction: column;
         height: auto;
-        padding: 5%;
+        padding: 12%;
     }
 
     .guiaUsuario {
@@ -1631,7 +1632,8 @@ button {
     .heroFront {
         flex-direction: column;
         padding: 15%;
-   
+
+
     }
 
     .heroUX {
@@ -1639,17 +1641,22 @@ button {
         flex-direction: column;
         padding: 15%;
 
+
     }
 
     .colunaProjetos {
         flex-direction: column;
         padding: 15%;
-        margin: 2px;
+
     }
 
-    .projetosUX {
+    .projetoUX {
 
         flex-direction: column;
+        padding: 10%;
+        align-items: center;
+        justify-content: center;
+
     }
 
     .imgEuUX {
