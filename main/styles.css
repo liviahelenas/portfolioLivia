@@ -1661,12 +1661,12 @@ button {
 
     .imgEuUX {
 
-        margin-top: 20px;
+        margin-top: 4rem;
 
     }
 
     .imgEuRosa {
-        margin-top: 20px;
+        margin-top: 4rem;
     }
 
 
@@ -1701,6 +1701,7 @@ button {
     .ctaTexto,
     .ctaPrimeiraColuna {
         width: 100%;
+        min-width: 150px;
         display: flex;
         justify-content: center;
     }
