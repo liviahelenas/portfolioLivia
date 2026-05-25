@@ -1,0 +1,1695 @@
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow-x: hidden;
+    transition: color 0.4s ease, background-image 0.5s ease-in-out;
+
+
+
+
+}
+
+.magya {
+    color: #da1e76;
+}
+
+.logo {
+    font-family: Silkscreen, sans-serif;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    display: flex;
+}
+
+
+
+
+.negritoStyle {
+    font-weight: 800;
+
+}
+
+
+
+header {
+    background: var(--color-header);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-top: none;
+    border-right: none;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1.75fr;
+    align-items: center;
+
+    width: 100%;
+    z-index: 1;
+}
+
+nav li {
+    color: var(--secondary-color);
+}
+
+.nav-center {
+    justify-self: center;
+
+    display: flex;
+    gap: 3rem;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav>* {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    :hover {
+        cursor: pointer;
+        color: #da1e76;
+    }
+}
+
+nav a {
+    line-height: 1;
+    text-decoration: none;
+}
+
+
+nav li:hover {
+    color: var(--magya);
+}
+
+
+
+.light-mode {
+    --bg-another: url("images/bgMain.png");
+    --color-header: rgba(255, 255, 255, 0.3);
+
+    --primary-color: #ffe4f6;
+
+    --bg-portfolio: linear-gradient(135deg,
+            rgba(250, 229, 249, 0.87) 0%,
+            /* branco sólido no centro */
+            rgba(255, 255, 255, 0.699) 100%
+            /* translúcido nas bordas */
+        );
+
+    --secondary-color: #000000;
+
+    --bg-main: linear-gradient(135deg,
+            rgba(248, 202, 233, 0.856) 0%,
+            /* branco sólido no centro */
+            rgba(255, 255, 255, 0.699) 100%
+            /* translúcido nas bordas */
+        ) url("images/bgMain.png");
+
+    --bg-image: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.144) 0%,
+            /* branco sólido no centro */
+            rgba(255, 255, 255, 0.774) 100%
+            /* translúcido nas bordas */
+        ), url("images/bgPerfil.png");
+
+    --magya: linear-gradient(135deg,
+            #ffcddba6 0%,
+            rgba(255, 183, 207, 0.55) 50%,
+            rgba(255, 160, 195, 0.6) 100%);
+
+    --text-accent: #000000;
+
+}
+
+.dark-mode {
+    --bg-image: linear-gradient(135deg,
+            rgba(12, 12, 12, 0.671) 0%,
+            rgba(65, 65, 65, 0.651) 100%),
+        url("images/bgDarkMode.png");
+    --color-header: rgba(0, 0, 0, 0.3);
+    --bg-portfolio: linear-gradient(135deg,
+            rgba(0, 0, 0, 0.849) 0%,
+            /* branco sólido no centro */
+            rgba(51, 51, 51, 0.829) 100%
+            /* translúcido nas bordas */
+        );
+
+    --primary-color: #1f1f1f;
+
+    --bg-another: linear-gradient(135deg,
+            rgba(226, 226, 226, 0.13) 0%,
+            rgba(150, 150, 150, 0) 100%),
+        url(images/bgDarkMode.png);
+    --secondary-color: #e9e9e9;
+
+}
+
+
+.hero {
+    background-image: var(--bg-another);
+    background-repeat: repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+
+    min-height: 100vh;
+    margin-top: -60px;
+    /* altura do header */
+    padding-top: 60px;
+}
+
+.contentHero {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.titulo {
+
+    background-image: url("images/titulo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+
+
+    height: 300px;
+    width: 100%;
+
+    font-size: 0;
+
+
+}
+
+
+
+.conteudoTextoPerfil p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    gap: 2rem;
+
+    color: var(--primary-color);
+
+}
+
+.conteudoTextoSobre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 8%;
+}
+
+.redesSociaisLink {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+}
+
+
+
+.fa-solid.fa-message {
+
+
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: flex-end;
+
+    &:hover {
+        color: #da1e76;
+
+    }
+
+}
+
+.fa-brands.fa-linkedin {
+
+    padding: 0.5rem;
+    font-size: 1.85rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+
+}
+
+.fa-brands.fa-github {
+
+    padding: 0.5rem;
+    font-size: 1.85rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+
+}
+
+.fa-brands.fa-behance {
+
+    padding: 0.5rem;
+    font-size: 1.85rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+
+}
+
+.quadradinho {
+    background-color: var(--primary-color);
+    padding: 7%;
+}
+
+.quadradao {
+    display: flex;
+    background: transparent;
+    border-radius: 0.4rem;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    transition: all 0.3s ease;
+    border: 1px solid #333333;
+
+
+
+}
+
+.quadradaoDiferente {
+    display: flex;
+    background: transparent;
+    border-radius: 0.4rem;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    transition: all 0.3s ease;
+    border: 1px solid var(--secondary-color);
+
+
+
+}
+
+.quadradaoDiferenteTransparente {
+    display: flex;
+    background: transparent;
+    border-radius: 0.4rem;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    transition: all 0.3s ease;
+    border: 1px solid var(--secondary-color);
+
+
+
+}
+
+a {
+    text-decoration: none;
+
+
+
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: inherit;
+    padding: 0.5%;
+    color: var(--secondary-color);
+
+}
+
+
+
+
+
+.imagemSobreMim {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+img.imagemSobreMim {
+    height: 450px;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+
+}
+
+
+
+.imagemSobreMim:hover {
+    transform: rotate(-8deg);
+}
+
+.perfil {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    padding: 2%;
+
+}
+
+svg {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+svg path {
+    filter: drop-shadow(0 -6px 12px rgba(0, 0, 0, 0.05));
+    height: 1080px;
+    width: 100%;
+
+}
+
+.conteudoTextoPerfil h1 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+
+}
+
+.imgPersonagem {
+    width: auto;
+    height: 400px;
+    min-height: 400px;
+}
+
+.imgEuRosa img {
+    width: auto;
+    height: 400px;
+    min-height: 400px;
+    animation: balancinho 1.2s ease-in-out infinite alternate;
+}
+
+
+.imgEuUX img {
+
+    width: auto;
+    height: 400px;
+    min-height: 400px;
+    animation: balancinho 1.2s ease-in-out infinite alternate;
+
+
+}
+
+.conteudoTextoPerfil {
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+    display: flex;
+    color: transparent;
+    border-radius: 0.4rem;
+    height: 22px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8%;
+    transition: all 0.3s ease;
+    border: 1px solid var(--secondary-color);
+}
+
+.alinhamentoTrajetoria {
+    display: flex;
+    flex-direction: row;
+}
+
+.trajetoriaTrajetoria {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4%;
+}
+
+.imagemWrapper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.imagemPerfil {
+    width: auto;
+    height: 400px;
+    animation: balancinho 1.2s ease-in-out infinite alternate;
+}
+
+.hoverBotao {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-2px);
+
+    color: var(--secondary-color);
+}
+
+.botoesPerfil {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+@keyframes balancinho {
+    0% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+
+
+
+
+.quebraGelo {
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    min-width: 100%;
+    gap: 3rem;
+    margin: 0;
+    padding: 4%;
+
+}
+
+
+
+svg {
+    display: block;
+    width: 200%;
+    height: auto;
+}
+
+.imgPersonagem {
+    height: 150px;
+    width: auto;
+    animation: balancinho 1.2s ease-in-out infinite alternate;
+}
+
+.imgsPersonagem {
+    height: 400px;
+    width: auto;
+    animation: balancinho 1.2s ease-in-out infinite alternate;
+}
+
+.portfolio h1 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.sobreMim h1 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.colunaUm h1 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+
+
+.skills h1 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.ajustandoPadding {
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sobreMim h2 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.quebraGelo h1 {
+
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+
+}
+
+.quebraGelo p {
+
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--secondary-color);
+
+
+}
+
+.textoQuebraGelo {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+
+
+
+.tituloPortfolio {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.hero p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--secondary-color);
+}
+
+
+
+
+.educacao {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+
+}
+
+.coluninhaDois {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.coluninhaUm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagemSkills {
+    height: auto;
+    width: 500px;
+
+    &:hover {
+        transform: rotate(-8deg);
+    }
+
+
+}
+
+
+
+.habilidadesGrid {
+
+    display: flex;
+    gap: 1.65rem;
+    flex-direction: column;
+
+}
+
+.hoverBotao {
+    cursor: pointer;
+
+}
+
+.hoverBotao:hover i,
+.hoverBotao:hover span,
+.hoverBotao:hover a {
+    color: #696969;
+}
+
+
+
+.fa-solid.fa-phone {
+    font-size: 1.5rem;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.contatoLivia {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.contatoLivia:hover i,
+.contatoLivia:hover a {
+
+    color: var(--primary-color);
+
+}
+
+.redesSociaisLink {
+    display: flex;
+    gap: 3rem;
+}
+
+.conteudoTextoPerfil p {
+    color: var(--secondary-color);
+}
+
+.educacao h2 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+
+}
+
+.educacao p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 2rem;
+
+}
+
+
+
+.habilidadesGrid p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 2rem;
+
+}
+
+.guiaUsuario {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+
+    :hover {
+        cursor: pointer;
+        color: #999999;
+        transition: all 0.3s ease;
+
+    }
+
+
+}
+
+
+.guiaUsuarioConversar {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    padding: 5%;
+}
+
+
+
+.alinhamentoTrajetoria {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+
+}
+
+.habilidadesExperiencia {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-image: var(--bg-image);
+    padding: 4%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+a {
+    :hover {
+        cursor: pointer;
+        color: #888888;
+        transition: all 0.3s ease;
+
+    }
+}
+
+.habilidadesExperiencia h1 {
+
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+
+}
+
+.trajetoriaTrajetoria h1 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+
+
+}
+
+.habilidadesExperiencia h2 {
+
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+
+}
+
+.habilidadesCard {
+
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+
+
+.contentHabilidade {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 4%;
+
+}
+
+.habilidadesCard h1 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+
+}
+
+.transicao {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textoFerramentas h2 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.habilidadesCard p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 2rem;
+}
+
+.trajetoriaTrajetoria p {
+
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 2rem;
+
+}
+
+
+.textoFerramentas ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+
+}
+
+.textoFerramentas p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 2rem;
+}
+
+.botoesHabilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+}
+
+.textoFerramentas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tags span {
+    border: 1.5px solid var(--secondary-color);
+    padding: 4px 12px;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    line-height: 2rem;
+}
+
+.cardTecnico {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tagsSoft {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tagsSoft span {
+    border: 1.5px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 4px 14px;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 2rem;
+}
+
+
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+
+    /* align-items: flex-start */
+
+
+}
+
+.alinhamentoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+input {
+    height: 30px;
+    min-width: 300px;
+    width: 400px;
+    border-radius: 0.3rem;
+
+}
+
+.cta {
+    height: 100vh;
+    width: auto;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.alinhamentoForm h2 {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+}
+
+.ctazinho {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    padding: 5%;
+}
+
+.ctaTexto {
+    height: auto;
+    width: 400px;
+    padding: 5%;
+}
+
+.cta h1 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+
+}
+
+
+.cta p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+}
+
+.cta form {
+
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 2rem;
+    display: flex;
+    width: 390px;
+    flex-direction: column;
+    gap: 0.2rem;
+
+
+}
+
+
+
+.ctaPrimeiraColuna {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: center;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 50px;
+
+}
+
+.ctaTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.botaoCadastro button {
+
+    display: flex;
+    background: transparent;
+    border-radius: 0.4rem;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    background-color: transparent;
+    line-height: 2rem;
+    margin: 4px;
+
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+.alinhamentoBotaoCadastroEntradas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    :hover {
+        cursor: pointer;
+        color: #696969;
+    }
+}
+
+.alinhamentoFooter {
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alinhamentoFooter h1 {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+}
+
+.alinhamentoFooter p {
+
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+
+
+.alinhamentoFooter h2 {
+
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 0.5rem;
+
+}
+
+.alinhamentoFooter {
+    padding: 2%;
+}
+
+
+.cards {
+
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tamanhoCards img {
+    height: 300px;
+    width: 300px;
+    min-width: 150px;
+    max-height: 150px;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tamanhoCards {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+.previaProjetos h1 {
+    font-size: 1.5rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+}
+
+.heroFrontDiv h1 {
+
+    font-size: 1.5rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+.heroUXDiv h1 {
+
+    font-size: 1.5rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+.heroFrontDiv {
+    padding: 4%;
+}
+
+.heroUXDiv {
+    padding: 4%;
+}
+
+.heroUXDiv p {
+
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+.heroFrontDiv p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+}
+
+.cardFront h2 {
+    margin-top: 4rem;
+
+}
+
+.textoCards {
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoCards h2 {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+.cardFront h2 {
+
+    font-size: 1.5rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+.textoCards p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+
+
+.modos {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    z-index: 1;
+
+}
+
+.botaoModos {
+    width: 20px;
+    height: 20px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: transparent;
+    color: var(--primary-color);
+
+    font-size: 14px;
+
+    :hover {
+        color: #696969;
+        cursor: pointer;
+
+    }
+}
+
+.fa-solid fa-moon {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+
+.track {
+    display: flex;
+    transition: transform 0.8s ease;
+
+}
+
+.track img {
+    min-width: 100%;
+    /* ESSENCIAL */
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    height: 100%;
+    line-height: 0;
+
+
+}
+
+.tituloSlide {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--bg-portfolio);
+}
+
+.cliqueAqui p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+
+}
+
+.cardFront p {
+    font-size: 1.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.5rem;
+}
+
+
+
+/* PÁGINA FRONT-END, PORTFOLIO*/
+.heroFront {
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    margin-top: -20px;
+    height: 100%;
+
+    min-height: 100vh;
+    padding: 9%;
+    display: flex;
+    flex-direction: row;
+}
+
+.condicoesClima {
+    height: 150px;
+    width: auto;
+
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heroUX {
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    margin-top: -20px;
+    height: 100%;
+
+    min-height: 100vh;
+    padding: 9%;
+    display: flex;
+    flex-direction: row;
+}
+
+.projetosFront {
+    height: 100%;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.personagem img {
+    height: 600px;
+    width: auto;
+}
+
+.cardFront {
+    background-color: var(--primary-color);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+
+}
+
+.cardFront:hover {
+    transform: translateY(-5px);
+
+}
+
+
+
+.projetosUX {
+    height: 100%;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+
+
+}
+
+.colunaProjetos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.cardFront {
+    height: 600px;
+    width: 350px;
+    border-radius: 2rem;
+    border: 0.95px solid var(--secondary-color);
+    background-color: transparent;
+    padding: 2%;
+
+}
+
+.spanTecnologias {
+    border: 1.5px solid var(--secondary-color);
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    font-family: Anonymous Pro, sans-serif;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    line-height: 4rem;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+
+
+
+    nav {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-center {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .conteudoTextoSobre {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .contentHabilidade {
+        flex-direction: column;
+    }
+
+    .quebraGelo {
+        flex-direction: column;
+        padding: 2%;
+
+    }
+
+    .habilidadesExperiencia {
+        flex-direction: column;
+        padding: 2%;
+
+    }
+
+    .alinhamentoTrajetoria {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .tamanhoCards {
+        flex-direction: column;
+    }
+
+    .textoQuebraGelo {
+        flex-direction: column;
+    }
+
+    .cta {
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+    }
+
+    .guiaUsuario {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .heroFront {
+        flex-direction: column;
+        padding: 15%;
+    }
+
+    .heroUX {
+
+        flex-direction: column;
+        padding: 15%;
+
+    }
+
+    .colunaProjetos {
+        flex-direction: column;
+        padding: 15%;
+        margin: 2px;
+    }
+
+    .projetosUX {
+
+        flex-direction: column;
+
+
+
+    }
+
+    .imgEuUX {
+
+        margin-top: 20px;
+
+    }
+
+    .imgEuRosa {
+        margin-top: 20px;
+    }
+
+
+
+
+    .quadradao,
+    .quadradaoDiferente,
+    .quadradaoDiferenteTransparente {
+        width: 100%;
+    }
+
+    .imagemSkills {
+        width: 100%;
+    }
+
+    .imagemPerfil,
+    .imgPersonagem,
+    .imgsPersonagem {
+        width: auto;
+        height: 400px;
+    }
+
+    .titulo {
+        height: 150px;
+    }
+
+    .tituloSlide {
+        font-size: 1.5rem;
+    }
+
+    .cta form,
+    .ctaTexto,
+    .ctaPrimeiraColuna {
+        width: 100%;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+    }
+}

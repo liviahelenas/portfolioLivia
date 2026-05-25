@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="images/icon01.png">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Lívia Helena | Front-End</title>
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+
+            <nav>
+                <div class="logo">&lt;Lívia.<br><span class="magya">Helena</span>/&gt;</div>
+                <ul>
+                    <a href="index.html">
+                        <li>Início</li>
+                    </a>
+                    <a href="index.html#quebraGelo">
+                        <li>Sobre Mim</li>
+                    </a>
+                    <a href="index.html#portfolio">
+                        <li>Portfólio</li>
+                    </a>
+
+                </ul>
+            </nav>
+
+            <a href="#vamosConversar"><i class="fa-solid fa-message"></i></a>
+
+
+        </header>
+
+        <section class="botaoModos">
+            <button class="modos" id="modosBotao" onclick="modosBotao()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </section>
+
+        <section class="heroFront">
+
+            <div class="imgEuRosa">
+                <img src="images/euRosa.png" alt="">
+            </div>
+
+            <div class="heroFrontDiv">
+                <h1>Minha Tajetória em Front-End</h1>
+                <p>Buscando ter mais ferramentas e autonomia em meu processo de design, me aprofundei em
+                    front-end. <br><br> Tenho conhecimento em HTML, CSS e JavaScript, desenvolvendo interfaces
+                    responsivas, e projetos autorais. <br><br>
+
+                    Ao longo da minha evolução, trabalhei com acessibilidade, responsividade, flexbox, media queries,
+                    manipulação de
+                    dados, DOM, funções, arrays e consumo de APIs.
+                </p>
+
+                <a href="#projetosFront"><u>Visualizar Projetos</u></a>
+            </div>
+
+        </section>
+
+        <section class="projetosFront" id="projetosFront">
+
+            <div class="colunaProjetos">
+                <div class="cardFront">
+
+                    <img src="images/condicoesClima.png" alt="" class="condicoesClima">
+                    <h2>Condições do Clima</h2>
+                    <p>Utilização de API'S Rest | Aplicação web que permite consultar as condições climáticas em tempo
+                        real de qualquer cidade do mundo.</p>
+
+                    <div class="tech">
+                        <span class="spanTecnologias">HTML5</span>
+                        <span class="spanTecnologias">CSS3</span>
+                        <span class="spanTecnologias">Typescript</span>
+
+                    </div>
+                    <a href="https://liviahelenas.github.io/previsaoClima/index.html" target="_blank"> <i>Acessar
+                            Aplicação</i></a>
+
+
+
+                </div>
+
+                <div class="cardFront">
+
+                    <img src="images/listarTarefas.png" alt="" class="condicoesClima">
+                    <h2>Lista de Tarefas</h2>
+                    <p>manipulação do DOM e lógica com JavaScript | O usuário pode listar tarefas e organiza-las por
+                        categoria.</p>
+
+                    <div class="tech">
+                        <span class="spanTecnologias">HTML5</span>
+                        <span class="spanTecnologias">CSS3</span>
+                        <span class="spanTecnologias">Javascript</span>
+
+                    </div>
+
+                    <a href="https://liviahelenas.github.io/listarTarefas/index.html" target="_blank"> <i>Acessar
+                            Aplicação</i></a>
+
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <section class="cta" id="vamosConversar">
+
+
+
+
+
+            <div class="ctaPrimeiraColuna">
+
+                <div class="ctaTexto">
+                    <h1>Transformo ideias em interfaces interativas.</h1>
+                    <p>Deixe seu contato abaixo <br> para conversarmos
+                        sobre seu projeto.
+                    </p>
+
+                    </a>
+
+                </div>
+
+                <div class="inputs">
+
+
+
+
+
+                    <div class="alinhamentoForm">
+
+
+
+
+                        <form method="post" id="formLogin" action="https://formspree.io/f/mgoqnojg">
+                            <label for="input-name">Nome:</label>
+                            <input type="text" id="input-text" name="name">
+
+                            <label for="input-email">Email:</label>
+                            <input type="email" id="input-email" name="email">
+                            <div class="alinhamentoBotaoCadastroEntradas">
+                                <button type="submit" class="botaoCadastro">
+                                    Enviar
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+        <footer>
+            <div class="alinhamentoFooter">
+
+
+                <h1>✿ Obrigada por visitar meu cantinho da internet ✿</h1>
+                <h2>Lívia Helena</h2>
+                <p>UX/UI Design | Front-end</p>
+
+
+                <p>© 2026</p>
+
+            </div>
+
+        </footer>
+    </main>
+    <script src="index.js"></script>
+
+
+</body>
+
+
+
+</html>
