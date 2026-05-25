@@ -1697,7 +1697,7 @@ button {
         font-size: 1.5rem;
     }
 
-    .cta form, .cta input,
+    .cta form, input,
     .ctaTexto,
     .ctaPrimeiraColuna {
         width: 100%;
