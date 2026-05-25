@@ -287,6 +287,10 @@ nav li:hover {
 
 }
 
+.portfolioFront {
+    line-height: 2rem;
+}
+
 .quadradinho {
     background-color: var(--primary-color);
     padding: 7%;
@@ -1397,6 +1401,7 @@ button {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
+    line-height: 2rem;
 
     z-index: 2;
 }
@@ -1581,6 +1586,9 @@ button {
         flex-direction: column;
     }
 
+    .hero {
+         margin-top: 2rem;
+    }
     .quebraGelo {
         flex-direction: column;
         padding: 2%;
@@ -1623,6 +1631,7 @@ button {
     .heroFront {
         flex-direction: column;
         padding: 15%;
+   
     }
 
     .heroUX {
@@ -1641,9 +1650,6 @@ button {
     .projetosUX {
 
         flex-direction: column;
-
-
-
     }
 
     .imgEuUX {
