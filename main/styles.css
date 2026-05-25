@@ -1440,10 +1440,8 @@ button {
 /* PÁGINA FRONT-END, PORTFOLIO*/
 .heroFront {
     background-color: var(--primary-color);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: auto;
+
+    width: 100%;
     margin-top: -20px;
     height: 100%;
 
@@ -1481,6 +1479,7 @@ button {
 .projetosFront {
     height: 100%;
     padding: 1rem;
+    background-attachment: fixed;
 
     width: 100%;
     display: flex;
@@ -1521,10 +1520,11 @@ button {
 .projetosUX {
     height: 100%;
     padding: 1rem;
+    background-attachment: fixed;
 
     width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     background-image: var(--bg-image);
     background-repeat: no-repeat;
@@ -1540,6 +1540,7 @@ button {
     align-items: center;
     justify-content: center;
 }
+
 
 .cardFront {
     height: 600px;
@@ -1588,6 +1589,9 @@ button {
         flex-direction: column;
     }
 
+    .heroFrontDiv {
+        margin: 2rem;
+    }
 
     .quebraGelo {
         flex-direction: column;
@@ -1630,7 +1634,7 @@ button {
 
     .heroFront {
         flex-direction: column;
-        padding: 15%;
+        padding: 10%;
 
 
     }
@@ -1645,7 +1649,8 @@ button {
 
     .colunaProjetos {
         flex-direction: column;
-        padding: 15%;
+        padding: 10%;
+        margin: 4rem;
 
     }
 
@@ -1696,7 +1701,8 @@ button {
         font-size: 1.5rem;
     }
 
-    .cta form, input,
+    .cta form,
+    input,
     .ctaTexto,
     .ctaPrimeiraColuna {
         width: 100%;
