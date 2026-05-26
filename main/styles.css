@@ -1611,6 +1611,8 @@ button {
 
     .cards {
         flex-direction: column;
+        min-width: 120px;
+        padding: 4%;
     }
 
     .tamanhoCards {
