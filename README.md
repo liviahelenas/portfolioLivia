@@ -1,7 +1,7 @@
 # ✨ Portfólio — Lívia Helena
 ## 📌 Sobre o projeto
 
-Este projeto é um portfólio pessoal desenvolvido para apresentar a trajetória, habilidades e projetos da designer e desenvolvedora front-end Lívia Helena.
+Este projeto é um portfólio pessoal desenvolvido para apresentar a trajetória, habilidades e projetos como designer e desenvolvedora front-end.
 
 🔗 **[Acesse o projeto ao vivo](https://liviahelenas.github.io/portfolioLivia/main/index.html)**
 
